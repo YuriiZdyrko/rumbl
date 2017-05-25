@@ -1,7 +1,7 @@
 <div>
   <%= for user <- @users do %>
-    <div class="">
-      <%= first_name(user) %>
-    </div>
+    <%= render "user.html", user: user %>
+    <%= link "View", to: user_path(@conn, :show, user.id) %>
+    <br />
   <% end %>
 </div>

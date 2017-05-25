@@ -1,4 +1,3 @@
 <div>
-  test <br />
-  <%= inspect @user %>
+  <%= render "user.html", user: @user %>
 </div>
