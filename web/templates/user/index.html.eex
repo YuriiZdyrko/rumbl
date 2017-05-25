@@ -1,0 +1,7 @@
+<div>
+  <%= for user <- @users do %>
+    <div class="">
+      <%= first_name(user) %>
+    </div>
+  <% end %>
+</div>
